@@ -160,8 +160,29 @@ body{
 }
 
 .conteudos{
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+  
+}
+.controle {
+    background-color: red;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-  
+    grid-template-rows: 200px 200px;
+   
+
+
+}
+.controle img{
+    height: 100%;
+    place-self: center;
+    
+    grid-column: 1/2;
+}
+.controle p{
+    grid-column: 2;
+}
+.comemoracao{
+    grid-column: 1;
 }
