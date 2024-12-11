@@ -62,7 +62,8 @@ body{
     color:white;
     text-align: center;
     height: 70vh;
-    padding: 6em;
+    padding: 6.5rem 0rem 1rem;
+    margin-bottom: 5vh;
 
 
 }
@@ -89,7 +90,7 @@ body{
 }
 .seta{
 
-    font-size: 2.5rem;
+    font-size: 3.8rem;
     color: #ff0f7b;
 }
 .comprar span{
@@ -110,7 +111,8 @@ body{
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 300px 100px 100px;
     place-items: start;
-    padding: 6rem;
+    padding: 2rem 6rem 3rem;
+    margin-bottom: 20vh;
     
 
 }
@@ -162,27 +164,55 @@ body{
 .conteudos{
     display: flex;
     flex-direction: column;
-    gap: 90px;
+
   
 }
 .controle {
-    background-color: red;
+ 
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 200px 200px;
-   
-
-
-}
-.controle img{
-    height: 100%;
-    place-self: center;
+    grid-template-columns: auto 400px;
+    justify-content: space-evenly;
+    margin: 0vh 0vh 20vh;
     
-    grid-column: 1/2;
+}
+.controle .controle-imagem{
+    width: 650px;
+    
+}
+.controle-itens{
+
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 40px 0pp;
+    place-self: center;
+    width: 100%;
+}
+.controle h2{
+
+    font-family: "Orbitron", sans-serif;
+    color: #ff0f7b;
+    font-size: 2.6rem;
+    margin: 0px 0px 35px;
 }
 .controle p{
-    grid-column: 2;
+
+    font-family: "Kanit", sans-serif;
+    font-size: 1.6rem;
+    margin: 0px 0px 35px;
+
 }
-.comemoracao{
-    grid-column: 1;
+.controle button{
+
+    width: 180px;
+    padding: 5px;
+    border-radius: 20px;
+    border: none;
+    text-transform: uppercase;
+    font-family: "Orbitron", sans-serif;
+    font-size: 20px;
+    color: white;
+    background: #ff0f7b;
+    cursor: pointer;
 }
+
