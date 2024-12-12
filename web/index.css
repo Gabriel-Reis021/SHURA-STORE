@@ -1,6 +1,8 @@
 *{
+
     margin: 0;
     padding: 0;
+
 }
 body{
 
@@ -54,6 +56,8 @@ body{
     color: white;
     background: #ff0f7b;
     cursor: pointer;
+ 
+    
 }
 
 .comprar{
@@ -92,6 +96,29 @@ body{
 
     font-size: 3.8rem;
     color: #ff0f7b;
+    animation: flutuar 2s infinite;
+
+
+}
+
+
+/* Animação do site*/
+
+
+@keyframes flutuar{
+    0%{
+
+        transform: translateY(0);
+    }
+    50%{
+
+        transform: translateY(-20px);
+    }
+    100%{
+
+        transform: translateY(0);
+
+    }
 }
 .comprar span{
 
@@ -162,10 +189,10 @@ body{
 }
 
 .conteudos{
+
     display: flex;
     flex-direction: column;
 
-  
 }
 .controle {
  
@@ -175,8 +202,11 @@ body{
     margin: 0vh 0vh 20vh;
     
 }
-.controle .controle-imagem{
-    width: 650px;
+.controle .conteudo-imagem{
+
+    width: 533px;
+    height: 600px;
+    object-fit: cover;
     
 }
 .controle-itens{
@@ -215,4 +245,156 @@ body{
     background: #ff0f7b;
     cursor: pointer;
 }
+.reviews{
 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    margin: 0vh 0vh 20vh;
+   
+}
+.reviews .item_1{
+    place-self: end;
+}
+.reviews .item_2{
+    place-self: center;
+}
+.reviews h1{
+
+    grid-column: 1/-1;
+    font-family: "Orbitron", sans-serif;
+    text-align: center;
+    font-size: 4em;
+    color: #fff;
+    letter-spacing: 10px;
+   
+}
+.reviews .reviews-itens h3{
+
+    font-family: "Orbitron", sans-serif;
+    font-weight: 800;
+    font-size: 1.85em;
+    line-height: 0.85em;
+    color: #ff0f7b;
+}
+.reviews .reviews-itens{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0px;
+    
+}
+.reviews .reviews-itens p {
+
+    font-family: "Kanit", sans-serif ;
+    font-size: 20px ;
+
+}
+.mouse{
+
+    height: 65vh;
+    background-image: url(/img/mouse.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 300px 100px 80px;
+
+
+}
+.mouse h1{
+
+    place-self: center;
+    font-family: "Orbitron", sans-serif;
+    font-size: 4.5em;
+    font-weight: 600;
+
+}
+.mouse .endereco{
+
+    place-self: end start;
+    
+}
+.mouse .endereco{
+
+    font-family: "Orbitron", sans-serif;
+    font-weight: 500;
+    line-height: 25px;
+}
+.mouse .email{
+
+    grid-area: 2/2 ;
+    place-self: center start;
+    font-family: "Orbitron", sans-serif;
+    font-weight: 800;
+    color: #ff0f7b;
+    letter-spacing: 1.2px;
+}
+.mouse .redes-sociais{
+
+    place-self: center start;
+    grid-area: 3/2;
+}
+.mouse .redes-sociais .twitter, .instagram, .facebook, .youtube{
+
+    width: 25px;
+    height:25px ;
+    color: black;
+    background: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    margin: 0px 5px;
+    cursor: pointer;
+}
+
+
+/* Efeito de entrada*/
+
+
+.mouse .redes-sociais .twitter:hover{
+
+    transition: ease-in-out 250ms;
+    box-shadow: 0px 0px 10px #fff;
+}
+.mouse .redes-sociais .instagram:hover{
+
+    transition: ease-in-out 250ms;
+    box-shadow: 0px 0px 10px #fff;
+}
+
+.mouse .redes-sociais .facebook:hover{
+
+    transition: ease-in-out 250ms;
+    box-shadow: 0px 0px 10px #fff;
+}
+
+.mouse .redes-sociais .youtube:hover{
+
+    transition: ease-in-out 250ms;
+    box-shadow: 0px 0px 10px #fff;
+}
+
+
+/* Efeito de saída*/
+
+
+.mouse .redes-sociais .twitter:not(:hover){
+
+    transition: ease-in-out 850ms;
+    
+  }
+.mouse .redes-sociais .instagram:not(:hover){
+
+    transition: ease-in-out 850ms;
+    
+  }
+.mouse .redes-sociais .facebook:not(:hover){
+
+    transition: ease-in-out 850ms;
+    
+  }
+.mouse .redes-sociais .youtube:not(:hover){
+
+  transition: ease-in-out 850ms;
+
+}
