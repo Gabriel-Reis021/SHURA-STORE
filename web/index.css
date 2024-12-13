@@ -254,10 +254,14 @@ body{
    
 }
 .reviews .item_1{
+
     place-self: end;
 }
 .reviews .item_2{
+
     place-self: center;
+    width: 259.81px;
+
 }
 .reviews h1{
 
@@ -396,5 +400,68 @@ body{
 .mouse .redes-sociais .youtube:not(:hover){
 
   transition: ease-in-out 850ms;
+
+}
+@media(max-width:1428px){
+
+    .introducao h1{
+        min-width: 45vw;
+        font-size: 3.1em;
+        
+    }
+
+
+}
+@media (max-width: 925px){
+    .conteudos .controle{
+        display: grid;
+        grid-template-columns: 60px 2fr 1fr;
+        grid-template-rows: 1fr 1fr;
+
+    }
+    .controle .conteudo-imagem{
+
+        grid-column: 2/3;
+
+    }
+    .controle .controle-itens{
+
+        grid-area: 2/2;
+    }
+    .reviews{
+        grid-template-columns: 1fr;
+    }
+    .reviews .reviews-itens{
+
+        place-self: center;
+        text-align: center;
+
+    }
+
+    .mouse h1{
+        font-size: 2.9em;
+    }
+    .mouse .email .endereco{
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 675px){
+    .mouse h1{
+        font-size: 0.9em;
+    }
+    .mouse, .email, .endereco{
+        font-size: 10px;
+    }
+}
+@media (max-width: 593px){
+
+    .controle .conteudo-imagem{
+
+        width: 400px;
+        height: 400px;
+
+    }
+
 
 }
