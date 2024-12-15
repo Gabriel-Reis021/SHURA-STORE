@@ -16,7 +16,11 @@ body{
     grid-template-columns: 1fr 1fr 1fr;
     padding: 60px;
     color: #fff;
-    background-image: url(/img/video-games-controllers-technology-keyboards-Xbox-One-joystick-223156-wallhere.com.jpg);
+    background-image: url(/img/wallpaperflare.com_wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
 
 }
 .introducao h1{
@@ -93,7 +97,7 @@ body{
     font-size: 1.5rem;
 }
 .seta{
-
+    margin: 20px 0px 0px;
     font-size: 3.8rem;
     color: #ff0f7b;
     animation: flutuar 2s infinite;
@@ -339,7 +343,7 @@ body{
     place-self: center start;
     grid-area: 3/2;
 }
-.mouse .redes-sociais .twitter, .instagram, .facebook, .youtube{
+.mouse .redes-sociais .icones{
 
     width: 25px;
     height:25px ;
@@ -352,10 +356,10 @@ body{
 }
 
 
-/* Efeito de entrada*/
+/*------------Efeito de entrada------------*/
 
 
-.mouse .redes-sociais .twitter:hover{
+.mouse .redes-sociais .icones:hover{
 
     transition: ease-in-out 250ms;
     box-shadow: 0px 0px 10px #fff;
@@ -366,43 +370,20 @@ body{
     box-shadow: 0px 0px 10px #fff;
 }
 
-.mouse .redes-sociais .facebook:hover{
-
-    transition: ease-in-out 250ms;
-    box-shadow: 0px 0px 10px #fff;
-}
-
-.mouse .redes-sociais .youtube:hover{
-
-    transition: ease-in-out 250ms;
-    box-shadow: 0px 0px 10px #fff;
-}
 
 
-/* Efeito de saída*/
+/*-------Efeito de saída---------*/
 
 
-.mouse .redes-sociais .twitter:not(:hover){
+.mouse .redes-sociais .icones:not(:hover){
 
     transition: ease-in-out 850ms;
     
   }
-.mouse .redes-sociais .instagram:not(:hover){
 
-    transition: ease-in-out 850ms;
-    
-  }
-.mouse .redes-sociais .facebook:not(:hover){
-
-    transition: ease-in-out 850ms;
-    
-  }
-.mouse .redes-sociais .youtube:not(:hover){
-
-  transition: ease-in-out 850ms;
-
-}
+/*----------------introdução--------------*/
 @media(max-width:1428px){
+
 
     .introducao h1{
         min-width: 45vw;
@@ -412,18 +393,114 @@ body{
 
 
 }
-@media(min-width:670px){
+@media(max-width:751px){
+
+    .introducao{
+        background-position: center;
+    }
 
     .introducao h1{
         min-width: 45vw;
-        font-size: 2.1em;
+        font-size: 2.5em;
         
     }
-    
 
 
 }
-@media (max-width: 925px){
+@media (max-width: 606px){
+    .introducao{
+        background-position: center;
+    }
+    .introducao h1{
+        font-size: 2em;
+        
+    }
+}
+@media (max-width:485px){
+
+    .introducao{
+        background-position: center;
+    }
+
+    .introducao h1{
+    font-size: 1.6em;
+    line-height: 40px;
+ }
+
+    .introducao button{
+        font-size: 14px;
+        height: 30px;
+    }
+}
+
+
+
+
+
+
+
+/*--------------comprar-----------*/
+
+@media(max-width:554px){
+
+    .comprar h1{
+        font-size: 2.5em;
+    }
+    .comprar p{
+        font-size: 1.0em;
+    }
+    .comprar .seta{
+        font-size: 2.5em;
+    }
+    .comprar h3{
+        font-size: 1.1em;
+    }
+}
+@media (max-width:391px){
+
+    .comprar h1{
+        
+        font-size: 35px;
+        
+
+    }
+    .comprar p{
+        
+        font-size: 0.8em;
+        
+
+    }
+    .comprar h3{
+        font-size: 1em;
+    }
+
+}
+
+
+
+
+
+
+
+/*---------estratégia-------------*/
+
+@media (max-width:630px){
+    
+    .estrategia h2{
+        font-size: 1.8em;
+    }
+    .estrategia button{
+
+        align-self: end;
+        font-size: 14px;
+        height: 30px; 
+    }
+}
+/*----------conteúdos---------*/
+
+
+
+@media (max-width: 970px){
     .conteudos .controle{
         display: grid;
         grid-template-columns: 60px 2fr 1fr;
@@ -439,14 +516,102 @@ body{
 
         grid-area: 2/2;
     }
+}
+
+@media (max-width: 630px){
+
+    .controle .conteudo-imagem{
+
+        width: 400px;
+        height: 400px;
+
+    }
+
+
+}
+@media (max-width: 466px){
+
+    .controle .conteudo-imagem{
+
+        width: 300px;
+        height: 300px;
+
+    }
+
+    .controle .controle-itens h2{
+        font-size: 1.5em;
+    }
+
+    .controle .controle-itens p{
+        font-size: 1.2em;
+    }
+
+
+    .controle .controle-itens button {
+        font-size: 14px;
+        height: 30px;
+    }
+}
+
+@media (max-width:364px){
+
+    .controle .conteudo-imagem{
+
+        width: 200px;
+        height: 200px;
+
+    }
+
+}
+
+
+/*-----------reviews --------------*/
+
+
+
+
+    @media (max-width: 970px){
     .reviews{
         grid-template-columns: 1fr;
     }
     .reviews .reviews-itens{
-
+    
         place-self: center;
         text-align: center;
+        
+    }
+}
+@media (max-width: 675px){
+    .reviews h1{
+        font-size: 2.2em;
+    }  
+    .reviews h3{
+        font-size: 1.3em;
+    }
+}
 
+@media (max-width:415px){
+
+    .reviews h1{
+        font-size: 1.5em
+    }
+    .reviews .reviews-itens{
+        font-size: 0.8em;
+    }
+    .reviews .reviews-itens p{
+        font-size: 1em;
+    }
+}
+
+
+
+/*---------------mouse ---------------*/
+
+
+    @media (max-width: 970px){
+
+    .mouse{
+        background-position: center;
     }
 
     .mouse h1{
@@ -458,22 +623,51 @@ body{
 }
 
 @media (max-width: 675px){
+    .mouse{
+        background-position: center;
+    }
+
+
     .mouse h1{
-        font-size: 0.9em;
+        font-size: 2.3em;
     }
     .mouse, .email, .endereco{
-        font-size: 10px;
+        font-size: 0.90em;
     }
 }
 
-@media (max-width: 593px){
+@media (max-width:465px){
 
-    .controle .conteudo-imagem{
-
-        width: 400px;
-        height: 400px;
-
+    .mouse{
+        background-position: center;
     }
 
 
+    .mouse{
+
+        display: flex;
+        flex-direction: column;
+
+    }
+    
+    .mouse, .endereco, .email{
+        gap: 30px;
+        width: 100vw;
+        text-align: center;
+    }
+
+    .mouse h1{
+        margin: 20px 0px 0px;
+    }
+
+
+
 }
+
+
+
+
+
+
+
+
