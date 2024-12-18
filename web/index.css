@@ -16,7 +16,7 @@ body{
     grid-template-columns: 1fr 1fr 1fr;
     padding: 60px;
     color: #fff;
-    background-image: url(/img/wallpaperflare.com_wallpaper.jpg);
+    background-image: url(/img/wallpaperflare.com_wallpaper.webp);
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -134,43 +134,54 @@ body{
     font-family: "Kanit", sans-serif;
     margin: 80px 0px 180px;
 }
+
+
+
 .estrategia{
-
-    color: white;
-    height: 50vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 300px 100px 100px;
-    place-items: start;
-    padding: 2rem 6rem 3rem;
-    margin-bottom: 20vh;
     
+color: white;
+height: 60vh;
+display: flex;
+justify-content: space-evenly;
+padding: 2rem 6rem 3rem;
+margin-bottom: 20vh;
+
 
 }
-.estrategia h2{
+.estrategia .texto-estrategia{
 
-    grid-column: 3;
+    align-items: center;
     align-self: center;
-    align-items: end;
-    color: #ff0f7b;   
-    font-size: 3rem;
-    font-weight: 100;
-    line-height: 1.5rem;
+
+
+
+}
+.texto-estrategia h2{
     
 
+
+
+color: #ff0f7b;   
+font-size: 3rem;
+font-weight: 100;
+line-height: 1.5rem;
+margin: 50px 0px;
+    
+    
     
 }
-.estrategia p{
+.texto-estrategia p{
+    
+grid-column: 3;
+align-self: start;
+font-family: "Kanit", sans-serif;
+margin: 50px 0px;
 
-    grid-column: 3;
-    align-self: start;
-    font-family: "Kanit", sans-serif;
-    
-    
+
 }
-.estrategia  button{
+.texto-estrategia button{
+    
 
-    grid-column: 3;
     width: 180px;
     padding: 5px;
     border-radius: 20px;
@@ -181,14 +192,106 @@ body{
     color: white;
     background: #ff0f7b;
     cursor: pointer;
-
+    
 }
 .estrategia h2{
+    
+font-family: "Orbitron", sans-serif;
+font-weight: 800;
+font-style: normal;
+line-height: 22px;
 
-    font-family: "Orbitron", sans-serif;
-    font-weight: 800;
-    font-style: normal;
-    line-height: 22px;
+}
+
+
+.container{
+    position: relative;
+    height: 50vh;
+}
+.container .wrapper{
+    
+    width: 50vw;
+    height: 50vh;
+    box-shadow: 10px 10px 20px rgba(0, 0 , 0, 0.6);
+    margin: 2.5rem;
+    overflow: hidden;
+    
+}
+.container .wrapper-holder{
+
+    display: grid;
+    grid-template-columns: repeat(4, 100%);
+    height: 100%;
+    width: 100%;
+    animation: slider 30s ease-in-out infinite ;
+}
+.container #slider-img-1{
+    
+    background-image: url(/img/controle.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.container #slider-img-2{
+    
+    background-image: url(/img/menino.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container #slider-img-3{
+    
+    background-image: url(/img/mouse.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container #slider-img-4{
+    
+    background-image: url(/img/wallpaperflare.com_wallpaper.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container .button-holder .button{
+    border: 2px solid #ff0f7b;
+    background-color: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    display: inline-block;
+    margin: .3rem;
+}
+.container .button-holder{
+
+    position: absolute;
+    left: 45%;
+    bottom: 0;
+
+}
+.button:hover{
+    box-shadow: 0px 0px 7px 4px #ff0f7b;
+    background-color: #fff;
+    transition: ease-in-out 200ms;
+}
+.button:not(:hover){
+    transition: ease-in-out 200ms;
+}
+
+@keyframes slider{
+    0%{transform:translate(0%);}
+    10%{transform:translate(-100%);}
+    20%{transform:translate(-100%);}
+    30%{transform:translate(-200%);}
+    40%{transform:translate(-200%);}
+    50%{transform:translate(-200%);}
+    60%{transform:translate(-300%);}
+    70%{transform:translate(-300%);}
+    80%{transform:translate(-300%);}
+    90%{transform:translate(0%);}
+    100%{transform:translate(0%);}
 
 }
 
@@ -258,11 +361,17 @@ body{
    
 }
 .reviews .item_1{
-
-    place-self: end;
+    
+    place-self: center;
 }
 .reviews .item_2{
 
+    place-self: center;
+    width: 259.81px;
+
+}
+.reviews .item_3{
+  
     place-self: center;
     width: 259.81px;
 
@@ -291,17 +400,19 @@ body{
     flex-direction: column;
     gap: 20px 0px;
     
+    
 }
 .reviews .reviews-itens p {
 
     font-family: "Kanit", sans-serif ;
     font-size: 20px ;
 
+
 }
 .mouse{
 
     height: 65vh;
-    background-image: url(/img/mouse.jpg);
+    background-image: url(/img/mouse.webp);
     background-size: cover;
     background-repeat: no-repeat;
     display: grid;
@@ -316,6 +427,7 @@ body{
     font-family: "Orbitron", sans-serif;
     font-size: 4.5em;
     font-weight: 600;
+ 
 
 }
 .mouse .endereco{
@@ -386,11 +498,33 @@ body{
 
 
     .introducao h1{
-        min-width: 45vw;
+        min-width: 32vw;
         font-size: 3.1em;
         
     }
 
+
+}
+
+
+@media(max-width:1057px){
+
+    .introducao h1{
+        min-width: 32vw;
+        font-size: 2.9em;
+        
+    }
+
+
+
+}
+@media(max-width:990px){
+
+    .introducao h1{
+        min-width: 32vw;
+        font-size: 2.1em;
+        
+    }
 
 }
 @media(max-width:751px){
@@ -426,7 +560,9 @@ body{
     font-size: 1.6em;
     line-height: 40px;
  }
-
+    .introducao h2{
+        align-self: end;
+    }
     .introducao button{
         font-size: 14px;
         height: 30px;
@@ -483,6 +619,30 @@ body{
 
 
 /*---------estratégia-------------*/
+@media (max-width:970px){
+    .estrategia{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .estrategia .wrapper{
+        margin: 0;
+        width: 100%;
+        height: 35vh;
+    }
+    .texto-estrategia h2{
+        text-align: center;
+    }
+    .texto-estrategia {
+        width: 100%;
+        text-align: center;
+    }
+    .estrategia{
+        margin-bottom: 35vh;
+    }
+
+}
 
 @media (max-width:630px){
     
@@ -495,7 +655,9 @@ body{
         font-size: 14px;
         height: 30px; 
     }
+
 }
+
 /*----------conteúdos---------*/
 
 
