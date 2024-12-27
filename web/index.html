@@ -42,22 +42,47 @@
       </section>
 
       <section class="estrategia">
-        <div class="container">
-          <div class="wrapper">
-            <div class="wrapper-holder">
-              <div id="slider-img-1"></div>
-              <div id="slider-img-2"></div>
-              <div id="slider-img-3"></div>
-              <div id="slider-img-4"></div>
-            </div>
+        <div class="slider">
+
+          <div class="slides">
+              <!--Radio Buttons-->
+              <input type="radio" name="radio-btn" id="radio1">
+              <input type="radio" name="radio-btn" id="radio2">
+              <input type="radio" name="radio-btn" id="radio3">
+              <input type="radio" name="radio-btn" id="radio4">
+  
+  
+              <!--Slide images-->
+              <div class="slide first">
+                  <img src="/img/LOL1.jpg" alt="">
+              </div>
+  
+              <div class="slide">
+                  <img src="/img/LOL2.jpg" alt="">
+              </div>
+              <div class="slide">
+                  <img src="/img/LOL3.jpg" alt="">
+              </div>
+              <div class="slide">
+                  <img src="/img/LOL4.jpg" alt="">
+              </div>
+              <!--Fim Slide images-->
+  
+              <!--Navigation auto-->
+              <div class="navigation-auto">
+                  <div class="auto-btn1"></div>
+                  <div class="auto-btn2"></div>
+                  <div class="auto-btn3"></div>
+                  <div class="auto-btn4"></div>
+              </div> 
           </div>
-          <div class="button-holder">
-            <a href="#slider-img-1" class="button"></a>
-            <a href="#slider-img-2" class="button"></a>
-            <a href="#slider-img-3" class="button"></a>
-            <a href="#slider-img-4" class="button"></a>
+          <div class="manual-navigation">
+              <label for="radio1" class="manual-btn"></label>
+              <label for="radio2" class="manual-btn"></label>
+              <label for="radio3" class="manual-btn"></label>
+              <label for="radio4" class="manual-btn"></label>
           </div>
-        </div>
+      </div>
         <div class="texto-estrategia">
           <h2>
             REAL TIME <br /><br />STRATEGY <br /><br />
@@ -80,7 +105,7 @@
             class="conteudo-imagem"
           />
           <div class="controle-itens">
-            <h2>
+            <h2 class="controle_text">
               ROLE - PLAYING <br />
               GAMES
             </h2>
@@ -99,7 +124,7 @@
             class="conteudo-imagem"
           />
           <div class="controle-itens">
-            <h2>CASUAL GAMES</h2>
+            <h2 class="controle_text">CASUAL GAMES</h2>
             <p>
               A collection of unique and quirky games to while away your day.
             </p>
@@ -167,6 +192,8 @@
         </div>
       </div>
     </footer>
+
+    <script src="index.js"></script>
 
     <script
       type="module"

@@ -147,8 +147,10 @@ color: white;
 height: 60vh;
 display: flex;
 justify-content: space-evenly;
+gap: 0px 40px;
 padding: 2rem 6rem 3rem;
 margin-bottom: 20vh;
+
 
 
 }
@@ -207,7 +209,7 @@ line-height: 22px;
 
 }
 
-
+/*
 .container{
     position: relative;
     height: 50vh;
@@ -227,7 +229,7 @@ line-height: 22px;
     grid-template-columns: repeat(4, 100%);
     height: 100%;
     width: 100%;
-    animation: slider 30s ease-in-out infinite ;
+    /*animation: slider 30s ease-in-out infinite ;
 }
 .container #slider-img-1{
     
@@ -278,6 +280,46 @@ line-height: 22px;
     width: 100%;
 
 }
+
+#slide_1:checked ~ .first{
+    margin-left: 0;
+
+}
+
+
+#slide_2:checked ~ .first{
+
+    margin-left: -25%;
+
+
+} 
+#slide_3:checked ~ .first{
+    
+    margin-left: -45%;
+
+} 
+#slide_3:checked ~ .first{
+    
+    margin-left: 50%;
+
+} 
+#slide_4:checked ~.first{
+    margin-left: -75%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .button:hover{
     box-shadow: 0px 0px 7px 4px #ff0f7b;
     transition: ease-in-out 200ms;
@@ -300,6 +342,78 @@ line-height: 22px;
     100%{transform:translate(0%);}
 
 }
+
+
+*/
+.slider{
+
+    margin: auto 0;
+    width: 1000px;
+    height: 50vh;
+    overflow: hidden;
+    box-shadow: 10px 10px 20px rgba(0, 0 , 0, 0.6);
+    position: relative;
+
+}
+.slides{
+    width: 400%;
+    height: 400px;
+    display: flex;
+
+    
+
+}
+
+.slides input{
+    display: none;
+
+}
+.slide{
+    width: 25%;
+    position: relative;
+    transition: 2s;
+}
+.slide img{
+    width: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.manual-navigation{
+    position: absolute;
+    width: 100%;
+    margin-top: -20px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.manual-btn{
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+.manual-btn:hover{
+    background-color: #fff;
+}
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+#radio4:checked ~ .first{
+    margin-left: -75%;
+}
+
 
 .conteudos{
 
@@ -565,11 +679,12 @@ line-height: 22px;
     }
 
     .introducao h1{
-    font-size: 1.6em;
+    font-size: 1.9em;
     line-height: 40px;
  }
     .introducao h2{
         align-self: end;
+        
     }
     .introducao button{
         font-size: 14px;
@@ -633,14 +748,19 @@ line-height: 22px;
         display: flex;
         flex-direction: column;
         gap: 40px;
+        height: 100%;
+        padding: 30px;
+        
 
     }
-
-    .estrategia .wrapper{
-        margin: 0;
+    .estrategia .slider{
         width: 100%;
-        height: 35vh;
     }
+
+
+    
+
+
     .texto-estrategia h2{
         text-align: center;
     }
@@ -660,6 +780,9 @@ line-height: 22px;
     .estrategia{
         padding: 0;
     }
+    .estrategia .slider{
+        width: 100%;
+    }
     
     .estrategia h2{
         font-size: 1.8em;
@@ -671,37 +794,68 @@ line-height: 22px;
         height: 30px; 
     }
 
+    .slider .manual-btn{
+        width: 5px;
+        height: 5px;
+    }
 }
 
 /*----------conteúdos---------*/
+@media (max-width:1125px){
+    
+    .conteudos article{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .conteudos .controle_text ,p{
+        text-align: center;
+        
+    }
+    .conteudos img{
+       
+        align-self: center;
+        margin: 0px 0px 60px;
+    }
+    .conteudos button{
+        align-self: center;
+    }
+}
 
 
 
 @media (max-width: 970px){
-    .conteudos .controle{
-        display: grid;
-        grid-template-columns: 60px 2fr 1fr;
-        grid-template-rows: 1fr 1fr;
 
+    .conteudos article{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
-    .controle .conteudo-imagem{
-
-        grid-column: 2/3;
-
+    .conteudos .controle_text ,p{
+        text-align: center;
+        
     }
-    .controle .controle-itens{
-
-        grid-area: 2/2;
+    .conteudos img{
+        align-self: center;
     }
+    .conteudos button{
+        align-self: center;
+    }
+    
 }
 
-@media (max-width: 630px){
+@media (max-width: 755px){
 
     .controle .conteudo-imagem{
 
         width: 400px;
         height: 400px;
 
+    }
+
+    .controle .controle-itens p{
+        font-size: 1.2em;
     }
 
 
