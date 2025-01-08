@@ -939,7 +939,16 @@ line-height: 22px;
 
 
 }
+@media (max-height: 745px){
+    .introducao h1{
+        font-size: 1.825rem;
+    }
+    .comprar{
+        margin-bottom: 15vh;
+    }
+   
 
+}
 
 
 
