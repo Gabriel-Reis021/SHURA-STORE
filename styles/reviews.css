@@ -1,0 +1,92 @@
+.reviews{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    margin: 0vh 0vh 20vh;
+   
+}
+.reviews .item_1{
+    
+    place-self: center;
+}
+.reviews .item_2{
+
+    place-self: center;
+    width: 259.81px;
+
+}
+.reviews .item_3{
+  
+    place-self: center;
+    width: 259.81px;
+
+}
+.reviews h1{
+
+    grid-column: 1/-1;
+    font-family: "Orbitron", sans-serif;
+    text-align: center;
+    font-size: 4em;
+    color: #fff;
+    letter-spacing: 10px;
+   
+}
+.reviews .reviews-itens h3{
+
+    font-family: "Orbitron", sans-serif;
+    font-weight: 800;
+    font-size: 1.85em;
+    line-height: 0.85em;
+    color: #ff0f7b;
+}
+.reviews .reviews-itens{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0px;
+    
+    
+}
+.reviews .reviews-itens p {
+
+    font-family: "Kanit", sans-serif ;
+    font-size: 20px ;
+
+
+}
+
+
+
+@media (max-width: 970px){
+    .reviews{
+        grid-template-columns: 1fr;
+    }
+    .reviews .reviews-itens{
+    
+        place-self: center;
+        text-align: center;
+        
+    }
+}
+@media (max-width: 675px){
+    .reviews h1{
+        font-size: 2.2em;
+    }  
+    .reviews h3{
+        font-size: 1.3em;
+    }
+}
+
+@media (max-width:415px){
+
+    .reviews h1{
+        font-size: 1.5em
+    }
+    .reviews .reviews-itens{
+        font-size: 0.8em;
+    }
+    .reviews .reviews-itens p{
+        font-size: 1em;
+    }
+}

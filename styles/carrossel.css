@@ -1,0 +1,225 @@
+.estrategia{
+    
+    color: white;
+    height: 60vh;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 0px 40px;
+    padding: 2rem 6rem 3rem;
+    margin-bottom: 20vh;
+    
+    
+    
+    }
+    .estrategia .texto-estrategia{
+    
+        align-items: center;
+        align-self: center;
+    
+    
+    
+    }
+    .texto-estrategia h2{
+        
+    
+    
+    
+    color: #ff0f7b;   
+    font-size: 3rem;
+    font-weight: 100;
+    line-height: 1.5rem;
+    margin: 50px 0px;
+        
+        
+        
+    }
+    .texto-estrategia p{
+        
+    
+    align-self: start;
+    font-family: "Kanit", sans-serif;
+    margin: 50px 0px;
+    
+    
+    }
+    .texto-estrategia button{
+        
+    
+        width: 180px;
+        padding: 5px;
+        border-radius: 20px;
+        border: none;
+        text-transform: uppercase;
+        font-family: "Orbitron", sans-serif;
+        font-size: 20px;
+        color: white;
+        background: #ff0f7b;
+        cursor: pointer;
+        
+    }
+    .estrategia h2{
+        
+    font-family: "Orbitron", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    line-height: 22px;
+    
+    }
+    
+    
+    .slider{
+    
+        margin: auto 0;
+        width: 1000px;
+        height: 50vh;
+        overflow: hidden;
+        box-shadow: 10px 10px 20px rgba(0, 0 , 0, 0.6);
+        position: relative;
+    
+    }
+    .slides{
+        width: 400%;
+        height: 400px;
+        display: flex;
+    
+        
+    
+    }
+    
+    .slides input{
+        display: none;
+    
+    }
+    .slide{
+        width: 25%;
+        position: relative;
+        transition: 2s;
+    }
+    .slide img{
+        width: auto;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .manual-navigation{
+        position: absolute;
+        width: 100%;
+        margin-top: -20px;
+        display: flex;
+        justify-content: center;
+    
+    
+    }
+    
+    .manual-btn{
+    
+        border: 2px solid #ff0f7b;
+        padding: 5px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 1s;
+        
+    }
+    .manual-btn:not(:last-child){
+        margin-right: 40px;
+    }
+    .manual-btn:hover{
+        background-color: #ff0f7b;
+        box-shadow: 0px 0px 10px #ff0f7b;
+    }
+    
+    #radio1:checked ~ .first{
+        margin-left: 0;
+    }
+    #radio2:checked ~ .first{
+        margin-left: -25%;
+    }
+    #radio3:checked ~ .first{
+        margin-left: -50%;
+    }
+    #radio4:checked ~ .first{
+        margin-left: -75%;
+    }
+    
+    
+    
+    .navigation-auto div{
+        border: 2px solid #ff0f7b;
+        padding: 5px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 1s;
+    }
+    .navigation-auto{
+        position: absolute;
+        width: 100%;
+        margin-top: 380px;
+        display: flex;
+        justify-content: center;
+    }
+    .navigation-auto div:not(:last-child){
+        margin-right: 40px;
+    }
+    #radio1:checked ~ .navigation-auto .auto-btn1{
+        background-color: #ff0f7b;
+        box-shadow: 0px 0px 10px #ff0f7b;
+    }
+    #radio2:checked ~ .navigation-auto .auto-btn2{
+        background-color: #ff0f7b;
+        box-shadow: 0px 0px 10px #ff0f7b;
+    }
+    #radio3:checked ~ .navigation-auto .auto-btn3{
+        background-color: #ff0f7b;
+        box-shadow: 0px 0px 10px #ff0f7b;
+    }
+    #radio4:checked ~ .navigation-auto .auto-btn4{
+        background-color: #ff0f7b;
+        box-shadow: 0px 0px 10px #ff0f7b;
+    }
+    
+    @media (max-width:1125px){
+    
+        .estrategia{
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            height: 100%;
+            padding: 30px;
+            
+    
+        }
+        .estrategia .slider{
+            width: 100%;
+            height: auto;
+        }
+        .estrategia .slide img{
+            width: 100%;
+            height: 420px ;
+        }
+        .slider .manual-btn{
+            width: 5px;
+            height: 5px;
+    
+        }
+        .navigation-auto div{
+    
+            height: 5px;
+            width: 5px;
+        }
+        .navigation-auto div:not(:last-child){
+            margin-right: 40px;
+        }
+    
+        .texto-estrategia h2{
+            text-align: center;
+        }
+        .texto-estrategia {
+            width: 100%;
+            text-align: center;
+        }
+        .estrategia{
+            margin-bottom: 35vh;
+        }
+    
+    }
+    

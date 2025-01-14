@@ -1,0 +1,154 @@
+.conteudos{
+
+    display: flex;
+    flex-direction: column;
+
+}
+.controle {
+ 
+    display: grid;
+    grid-template-columns: auto 400px;
+    justify-content: space-evenly;
+    margin: 0vh 0vh 20vh;
+    
+}
+.controle .conteudo-imagem{
+
+    width: 533px;
+    height: 600px;
+    object-fit: cover;
+    
+}
+.controle-itens{
+
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 40px 0px;
+    place-self: center;
+    width: 100%;
+
+}
+
+.controle h2{
+
+    font-family: "Orbitron", sans-serif;
+    color: #ff0f7b;
+    font-size: 2.6rem;
+    margin: 0px 0px 35px;
+}
+.controle p{
+
+    font-family: "Kanit", sans-serif;
+    font-size: 1.6rem;
+    margin: 0px 0px 35px;
+
+}
+.controle button{
+
+    width: 180px;
+    padding: 5px;
+    border-radius: 20px;
+    border: none;
+    text-transform: uppercase;
+    font-family: "Orbitron", sans-serif;
+    font-size: 20px;
+    color: white;
+    background: #ff0f7b;
+    cursor: pointer;
+}
+
+
+@media (max-width:1125px){
+    
+    .conteudos article{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .conteudos .controle_text ,p{
+        text-align: center;
+        
+    }
+    .conteudos img{
+       
+        align-self: center;
+        margin: 0px 0px 60px;
+    }
+    .conteudos button{
+        align-self: center;
+    }
+}
+
+
+
+@media (max-width: 970px){
+
+    .conteudos article{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .conteudos .controle_text ,p{
+        text-align: center;
+        
+    }
+    .conteudos img{
+        align-self: center;
+    }
+    .conteudos button{
+        align-self: center;
+    }
+    
+}
+
+@media (max-width: 755px){
+
+    .controle .conteudo-imagem{
+
+        width: 400px;
+        height: 400px;
+
+    }
+
+    .controle .controle-itens p{
+        font-size: 1.2em;
+    }
+
+
+}
+@media (max-width: 466px){
+
+    .controle .conteudo-imagem{
+
+        width: 300px;
+        height: 300px;
+
+    }
+
+    .controle .controle-itens h2{
+        font-size: 1.5em;
+    }
+
+    .controle .controle-itens p{
+        font-size: 1.2em;
+    }
+
+
+    .controle .controle-itens button {
+        font-size: 14px;
+        height: 30px;
+    }
+}
+
+@media (max-width:364px){
+
+    .controle .conteudo-imagem{
+
+        width: 200px;
+        height: 200px;
+
+    }
+
+}

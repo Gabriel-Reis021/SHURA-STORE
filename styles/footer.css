@@ -1,0 +1,151 @@
+.mouse{
+
+    height: 65vh;
+    background-image: url(/img/mouse.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 300px 100px 80px;
+
+
+}
+.mouse h1{
+
+    place-self: center;
+    font-family: "Orbitron", sans-serif;
+    font-size: 4.5em;
+    font-weight: 600;
+ 
+
+}
+.mouse .endereco{
+
+    place-self: end start;
+    
+}
+.mouse .endereco{
+
+    font-family: "Orbitron", sans-serif;
+    font-weight: 500;
+    line-height: 25px;
+}
+.mouse .email{
+
+    grid-area: 2/2 ;
+    place-self: center start;
+    font-family: "Orbitron", sans-serif;
+    font-weight: 800;
+    color: #ff0f7b;
+    letter-spacing: 1.2px;
+}
+.mouse .redes-sociais{
+
+    place-self: center start;
+    grid-area: 3/2;
+}
+.mouse .redes-sociais .icones{
+
+    width: 25px;
+    height:25px ;
+    color: black;
+    background: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    margin: 0px 5px;
+    cursor: pointer;
+}
+
+
+/*------------Efeito de entrada------------*/
+
+
+.mouse .redes-sociais .icones:hover{
+
+    transition: ease-in-out 250ms;
+    box-shadow: 0px 0px 10px #fff;
+}
+.mouse .redes-sociais .instagram:hover{
+
+    transition: ease-in-out 250ms;
+    box-shadow: 0px 0px 10px #fff;
+}
+
+
+
+/*-------Efeito de saída---------*/
+
+
+.mouse .redes-sociais .icones:not(:hover){
+
+    transition: ease-in-out 850ms;
+    
+  }
+
+
+
+  @media (max-width: 970px){
+
+    .mouse{
+        background-position: center;
+    }
+
+    .mouse h1{
+        font-size: 2.9em;
+    }
+    .mouse .email .endereco{
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 675px){
+    .mouse{
+        background-position: center;
+    }
+
+
+    .mouse h1{
+        font-size: 2.3em;
+    }
+    .mouse, .email, .endereco{
+        font-size: 0.90em;
+    }
+}
+
+@media (max-width:465px){
+
+    .mouse{
+        background-position: center;
+    }
+
+
+    .mouse{
+
+        display: flex;
+        flex-direction: column;
+
+    }
+    
+    .mouse, .endereco, .email{
+        gap: 30px;
+        width: 100vw;
+        text-align: center;
+    }
+
+    .mouse h1{
+        margin: 20px 0px 0px;
+    }
+
+
+
+}
+@media (max-height: 745px){
+    .introducao h1{
+        font-size: 1.825rem;
+    }
+    .comprar{
+        margin-bottom: 15vh;
+    }
+   
+
+}
